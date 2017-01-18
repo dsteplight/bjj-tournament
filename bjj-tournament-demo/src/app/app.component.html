@@ -1,3 +1,17 @@
 <h1>
   {{title}}
 </h1>
+<h1>
+      <div>
+              <ul>
+                  <li *ngFor="let tournament of onetournament.messages">{{tournament.name}}</li>
+             </ul>
+
+<!---
+            <app-simple-form *ngFor='let tournament of onetournament.messages'
+                [tournament]='tournament.name'
+                (update)='onUpdate(tournament.id, $event.name)'
+               ></app-simple-form>
+--->
+      </div>
+</h1>
