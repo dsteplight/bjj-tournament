@@ -7,11 +7,12 @@
                   <li *ngFor="let tournament of onetournament.messages">{{tournament.name}}</li>
              </ul>
 
-<!---
-            <app-simple-form *ngFor='let tournament of onetournament.messages'
-                [tournament]='tournament.name'
-                (update)='onUpdate(tournament.id, $event.name)'
-               ></app-simple-form>
---->
+            <ul>
+              <li class="text" *ngFor="let item of items | async">
+                {{item.name}}
+                  
+              </li>
+            </ul>
+
       </div>
 </h1>
