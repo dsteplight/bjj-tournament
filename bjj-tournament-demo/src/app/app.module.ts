@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { DummyComponent } from './dummy.component';
+import { NotFoundComponent } from './notfound.component';
 import { OneTournamentService } from './one-tournament.service';
 
 export const firebaseConfig = {
@@ -20,6 +21,7 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
+    NotFoundComponent,
     DummyComponent
   ],
   imports: [
