@@ -1,12 +1,12 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DummyComponent }   from './dummy.component';
+import { NotFoundComponent }   from './notfound.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'dashboard',  component: DummyComponent }
-  //{ path: 'detail/:id', component: HeroDetailComponent },
- // { path: 'heroes',     component: HeroesComponent }
+  { path: '', redirectTo: '/tournaments', pathMatch: 'full' },
+  { path: 'tournaments',  component: DummyComponent },
+  { path: '**',  component: NotFoundComponent }
 ];
 
 
